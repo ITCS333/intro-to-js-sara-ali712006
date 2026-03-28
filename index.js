@@ -5,7 +5,7 @@
  */
 function sum(a, b) {
   // TODO: Implement this function.
-  return a+b;
+  return a + b;
 }
 
 /**
@@ -23,7 +23,7 @@ function reverseString(str) {
  */
 function findLargest(numbers) {
   // TODO: Implement this function.
-  if(number.length==0) return null;
+  if(!numbers || numbers.length===0) return null;
   return Math.max(...numbers);
 }
 
@@ -35,9 +35,8 @@ function findLargest(numbers) {
  */
 function isPalindrome(str) {
   // TODO: Implement this function.
-  let lowStr =str.toLowerCase();
-  let reversedStr =lowStr.split(' ').reverse().join(' ');
-  return lowStr==reversedStr;
+  let lowStr = str.toLowerCase(); 
+  return lowStr == lowStr.split(' ').reverse().join(' ');
 }
 
 /**
@@ -46,7 +45,7 @@ function isPalindrome(str) {
  */
 function filterEvenNumbers(numbers) {
   // TODO: Implement this function.
-}return numbers.filter(num=> num % 2==0);
+}return numbers.filter(num => num % 2 === 0);
 
 
 // Do not edit the line below.
